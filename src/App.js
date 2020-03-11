@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import './styles/App.scss';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <h1>
-          Hello World!
+          ChuckNorrify
+          <img src="./chuck-norris.gif" className="App-logo" alt="logo" />
         </h1>
       </header>
     </div>
