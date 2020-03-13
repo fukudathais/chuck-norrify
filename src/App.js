@@ -8,6 +8,7 @@ import {
 import './styles/App.scss';
 
 import Spinner from './components/Loading/Spinner';
+import PageNotFound from './pages/PageNotFound';
 
 const Home = lazy(() => import('./pages/Home'));
 const Category = lazy(() => import('./pages/Category'));
@@ -21,6 +22,8 @@ const App = () => {
                         <Route exact path="/" component={Home} />
 
                         <Route path="/category/:category" component={Category} />
+
+                        <Route path='*' exact={true} component={PageNotFound} />
                     </Switch>
                 </main>
             </Suspense>

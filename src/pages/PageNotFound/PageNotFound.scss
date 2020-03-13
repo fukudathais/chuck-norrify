@@ -1,0 +1,48 @@
+@import '../../styles/_root';
+
+.PageNotFound {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Content {
+        @include boxShadow();
+        background-color: $white;
+        border-radius: .6rem;
+        padding: 1rem 2rem;
+        margin: 0 5vmin;
+        position: relative;
+
+        h1 {
+            color: $bgSecondColor;
+            font-size: 16vmin;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+        }
+
+        p {
+            color: $fontColor;
+            margin: .5rem 0;
+        }
+
+        b { color: $bgColor }
+
+        a {
+            @include boxShadow();
+            background-color: $bgColor;
+            border-radius: .5rem;
+            color: $white;
+            display: inline-flex;
+            align-items: center;
+            padding: .5rem 1.5rem;
+            margin: 1rem auto;
+            font-weight: bold;
+            letter-spacing: .25rem;
+
+            svg { margin-right: .5rem;}
+        }
+    }
+}
