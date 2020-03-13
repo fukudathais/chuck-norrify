@@ -12,16 +12,19 @@ class Joke extends Component {
         this.state = {
             category: this.props.category,
             joke: this.props.jokeValue,
-            loading: true
+            loading: false
         };
 
         this.getJoke = this.getJoke.bind(this);
+    }
 
+    componentWillMount() {
         this.getJoke();
     }
 
     getJoke() {
         this.setState({loading:true});
+
         Api.getJoke(this.state.category)
             .then(res => {
                 this.setState({joke: res.data.value, loading: false});

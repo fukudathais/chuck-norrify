@@ -16,7 +16,7 @@
         align-items: center;
         display: inline-flex;
         color:$white;
-        font-size: calc(10px + .75vmin);
+        font-size: calc(10px + 1.25vmin);
         letter-spacing: .3rem;
 
         @include above(md) { margin-left: 7.5rem; }

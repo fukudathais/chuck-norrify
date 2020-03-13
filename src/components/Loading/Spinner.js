@@ -6,14 +6,14 @@ import './Loading.scss';
 class Spinner extends Component {
     render() {
         return (
-            <p>
+            <div>
                 <div className="lds-ellipsis">
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </p>
+            </div>
         );
     }
 };
