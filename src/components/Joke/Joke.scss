@@ -66,11 +66,7 @@
             justify-content: center;
             cursor: pointer;
             transition: all .2s ease-in-out;
-
-            &:hover {
-                font-weight: bold;
-                letter-spacing: .05rem;
-            }
+            letter-spacing: .05rem;
 
             svg {
                 margin: 0 .3rem;

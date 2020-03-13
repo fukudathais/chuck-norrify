@@ -33,8 +33,8 @@ class Joke extends Component {
                     <h2>{this.state.joke}</h2>
                     <span onClick={this.getJoke} className="GetJokeBtn">
                         shuffle joke <TiArrowShuffle />
+                        <b className="CategoryName">{this.state.category}</b>
                     </span>
-                    <span className="CategoryName">{this.state.category}</span>
                 </div>
             </div>
         );
