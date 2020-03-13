@@ -1,0 +1,30 @@
+@import '../../styles/_root';
+
+.CategoryPage {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 1rem 0;
+        @include below(sm) { margin-top: 3.5rem }
+    }
+
+    .backBtn {
+        align-items: center;
+        display: inline-flex;
+        color:$white;
+        font-size: calc(10px + .75vmin);
+        letter-spacing: .3rem;
+
+        @include above(md) { margin-left: 7.5rem; }
+
+        @include below(md) {
+            margin: 1rem .25rem;
+            position: absolute;
+            top: 0;
+        }
+    }
+}

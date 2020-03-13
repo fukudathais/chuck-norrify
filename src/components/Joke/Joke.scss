@@ -1,0 +1,81 @@
+@import '../../styles/_root';
+
+.Joke {
+    padding: 1rem;
+    position: relative;
+
+    &:after {
+        content: url(../../chuck-joke.gif);
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+
+        @include below(md) {
+            bottom: 0;
+            top: -6rem;
+            transform: translateX(-50%) scale(0.6);
+            left: 50%;
+        }
+    }
+
+    &Content {
+        @include boxShadow();
+        background-color: $white;
+        border-radius: .6rem;
+        padding: 1rem 2rem;
+        position: relative;
+
+        @include above(md) {
+            margin: 0 6.5rem;
+        }
+
+        @include below(md) {
+            margin-top: 4rem;
+        }
+
+        h2 {
+            color: $fontColor;
+            font-size: calc(10px + 1.75vmin);
+
+            @include above(md) {
+                padding-right: 3rem;
+            }
+        }
+
+        .CategoryName {
+            color: $bgSecondColor;
+            align-items: center;
+            display: inline-flex;
+            font-size: calc(10px + 1.25vmin);
+            letter-spacing: .25rem;
+            margin: 0 .25rem;
+            font-weight: bold;
+
+            @include above(md) {
+                margin-right: 3rem;
+            }
+        }
+
+        .GetJokeBtn {
+            color: $bgColor;
+            font-size: calc(10px + 1vmin);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                font-weight: bold;
+                letter-spacing: .05rem;
+            }
+
+            svg {
+                margin: 0 .3rem;
+                font-size: calc(10px + 2vmin);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/_root';
+
+.Categories {
+    .HomePage & {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+
+        @include below(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        a {
+            padding: 1.5rem 0;
+        }
+    }
+    .CategoryPage & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @include below(md) { justify-content: center }
+
+        a {
+            padding: .5rem 1rem;
+            margin: .5rem;
+        }
+    }
+
+    a {
+        @include boxShadow();
+        background: $white;
+        border-radius: .6rem;
+        color: $bgColor;
+        font-size: 1.2rem;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &.active {
+            @include gradient($hoverColor, $secondHoverColor);
+            font-weight: bold;
+            letter-spacing: .3rem;
+            text-shadow: 4px 0px 0 rgba($fontColor, 0.2);
+        }
+    }
+}
