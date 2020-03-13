@@ -9,7 +9,7 @@
 
     h1 {
         margin: 1rem 0;
-        @include below(sm) { margin-top: 3.5rem }
+        @include below(sm) { margin-top: 2.5rem }
     }
 
     .backBtn {
