@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,19 +7,21 @@ import {
 
 import './styles/App.scss';
 
-import Home from './pages/Home';
-import Category from './pages/Category';
+const Home = lazy(() => import('./pages/Home'));
+const Category = lazy(() => import('./pages/Category'));
 
 const App = () => {
     return (
         <Router>
-            <main className="App">
-                <Switch>
-                    <Route exact path="/" component={Home} />
+            <Suspense fallback={<div className="App">Loading...</div>}>
+                <main className="App">
+                    <Switch>
+                        <Route exact path="/" component={Home} />
 
-                    <Route path="/category/:category" component={Category} />
-                </Switch>
-            </main>
+                        <Route path="/category/:category" component={Category} />
+                    </Switch>
+                </main>
+            </Suspense>
         </Router>
     );
 }
