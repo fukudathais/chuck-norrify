@@ -10,7 +10,6 @@ class Header extends Component {
                     ChuckNorrify
                     <img src={logo} className="App-logo" alt="logo" />
                 </h1>
-                <p>choose a category to load a random fact about Chuck Norris.</p>
             </header>
         );
     }

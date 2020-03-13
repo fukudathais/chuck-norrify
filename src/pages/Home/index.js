@@ -8,6 +8,7 @@ const Home = () => {
     return (
         <div className="HomePage container">
             <Header />
+            <p>choose a category to load a random fact about Chuck Norris.</p>
             <CategoryList />
             <Footer />
         </div>
