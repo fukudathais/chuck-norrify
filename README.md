@@ -4,6 +4,9 @@
 
 >Essa aplicação consome a API do [ChuckNorris.io](https://api.chucknorris.io/) para exibir as categorias existentes e carregar uma piada aleatória sobre o tema da categoria selecionada.
 
+## ⚛️ Home Page
+Acesse o ChuckNorrify agora clicando [aqui ↗️](https://fukudathais-chucknorrify.netlify.com/).
+
 ## 💻 Como rodar o projeto localmente
 
 #### 1. Instalação
@@ -13,7 +16,7 @@ npm install
 
 #### 2. Rode `npm start`
 Isso rodará a aplicação em modo de desenvolvimento.<br />
-Abra [http://localhost:3000](http://localhost:3000)↗️ no seu navegador para visualizar.
+Abra [http://localhost:3000](http://localhost:3000) ↗️ no seu navegador para visualizar.
 
 
 ## 🛠 Feito com
