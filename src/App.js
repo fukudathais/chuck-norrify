@@ -21,7 +21,10 @@ const App = () => {
                     <Switch>
                         <Route exact path="/" component={Home} />
 
-                        <Route path="/category/:category" component={Category} />
+                        <Route
+                            path="/category/:category"
+                            render={(props) => (<Category key={props.match.params.category} {...props} />)
+                        } />
 
                         <Route path='*' exact={true} component={PageNotFound} />
                     </Switch>
