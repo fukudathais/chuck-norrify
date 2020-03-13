@@ -34,6 +34,15 @@
 
     }
 
+    &-footer {
+        font-size: calc(10px + .5vmin);
+        padding: 2rem 0;
+
+        svg { color: #c30a45; }
+
+        a { color: $hoverColor; }
+    }
+
     h4 {
         margin: 1.5rem 0 0;
         font-size: 20px;

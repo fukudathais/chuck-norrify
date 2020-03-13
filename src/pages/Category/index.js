@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { TiArrowLeft } from "react-icons/ti";
 import Joke from '../../components/Joke';
 import CategoryList from '../../components/CategoryList';
+import Footer from '../../components/Footer';
 import Api from '../../utils/api';
 
 import './Category.scss';
@@ -35,6 +36,7 @@ class Category extends Component {
                     <Joke category={this.state.category} jokeValue={this.state.joke} />
                     <h4>read jokes from other categories:</h4>
                     <CategoryList />
+                    <Footer />
                 </div>
             </section>
         );
